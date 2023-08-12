@@ -20,42 +20,22 @@
     </style>
 </head>
 <body>
-    <div class="side-nav">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6570821657712490"
-        crossorigin="anonymous"></script>
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-format="autorelaxed"
-            data-ad-client="ca-pub-6570821657712490"
-            data-ad-slot="6509861319">
-        </ins>
-        <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-6570821657712490"
-            data-ad-slot="3664206124"
-            data-ad-format="auto"
-            data-full-width-responsive="true">
-        </ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-    </div>
     <form action="{{url_for('predict')}}" method="POST">
         <input type="text" name="area" placeholder="Enter the area"/>
             <select>
-            <option value="bathrooms">Bathrooms</option>
-            <option value="stories">Stories</option>
-            <option value="mainroad">Mainroad</option>
-            <option value="guestroom">Guestroom</option>
-            <option value="basement">Basement</option>
-            <option value="hotwaterheating">Hotwaterheating</option>
-            <option value="airconditioning">Airconditioning</option>
-            <option value="parking">Parking</option>
-            <option value="prefarea">Prefarea</option>
-            <option value="furnishingstatus">Furnishingstatus</option>
+                <option value="bathrooms">Bathrooms</option>
+                <option value="stories">Stories</option>
+                <option value="mainroad">Mainroad</option>
+                <option value="guestroom">Guestroom</option>
+                <option value="basement">Basement</option>
+                <option value="hotwaterheating">Hotwaterheating</option>
+                <option value="airconditioning">Airconditioning</option>
+                <option value="parking">Parking</option>
+                <option value="prefarea">Prefarea</option>
+                <option value="furnishingstatus">Furnishingstatus</option>
             
-    </select>
-    <button type="submit">Submit</button>
+            </select>
+        <button type="submit">Submit</button>
     </form>
     <h3><br>{{prediction_text}}</h3>
 </body>
